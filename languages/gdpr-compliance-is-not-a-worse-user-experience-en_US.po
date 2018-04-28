@@ -1,0 +1,45 @@
+# Copyright (C) 2018 GDPR is not a worse user experience.
+# This file is distributed under the same license as the GDPR is not a worse user experience. package.
+msgid ""
+msgstr ""
+"Project-Id-Version: GDPR is not a worse user experience. 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gdpr-compliance-"
+"is-not-a-worse-user-experience\n"
+"POT-Creation-Date: 2018-04-28 13:38:23+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-04-28 15:41+0100\n"
+"Last-Translator: imath <mathchristo@yahoo.fr>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
+
+#. Plugin Name of the plugin/theme
+msgid "GDPR is not a worse user experience."
+msgstr "GDPR is not a worse user experience."
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://github.com/imath/gdpr-compliance-is-not-a-worse-user-experience/"
+msgstr ""
+"https://github.com/imath/gdpr-compliance-is-not-a-worse-user-experience/"
+
+#. Description of the plugin/theme
+msgid ""
+"RGPD, ce n'est pas parce qu'un utilisateur décide de ne pas stocker ses "
+"données personnelles dans des cookies qu'il mérite une plus mauvaise "
+"expérience de WordPress."
+msgstr ""
+"GDPR, the fact a user did not consent to store their personal data within "
+"browser cookies is not a valuable reason to provide him with a worse user "
+"experience."
+
+#. Author of the plugin/theme
+msgid "imath"
+msgstr "imath"
+
+#. Author URI of the plugin/theme
+msgid "https://imathi.eu/"
+msgstr "https://imathi.eu/"
