@@ -128,10 +128,10 @@ function gcinawue_comment_reply_link( $link = '', $args = array(), $comment = nu
 		return $link;
 	}
 
-	preg_match( '/(?<=href=\').+(?=\')[\"|\']\s/', $link, $matches );
-	$replace = trim( reset( $matches ), '\' ' );
+	preg_match( '/href=[\'|\"](.*?)[\"|\']\s/', $link, $matches );
+	$replace = trim( end( $matches ), '\' ' );
 
-	if ( $replace ) {
+	if ( $replace && false !== strrpos( $replace, '_gcinawue_unapproved' ) ) {
 		$url = esc_url( add_query_arg( array(
 			'replytocom' => $comment->comment_ID,
 			'_gcinawue_unapproved' => false,
