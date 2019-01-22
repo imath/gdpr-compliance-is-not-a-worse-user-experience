@@ -3,9 +3,9 @@
  * Plugin Name: GDPR is not a worse user experience.
  * Plugin URI: https://github.com/imath/gdpr-compliance-is-not-a-worse-user-experience/
  * Description: RGPD, ce n'est pas parce qu'un utilisateur décide de ne pas stocker ses données personnelles dans des cookies qu'il mérite une plus mauvaise expérience de WordPress.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Requires at least: 4.9.6
- * Tested up to: 5.0.0
+ * Tested up to: 5.1.0
  * License: GPLv2 or later
  * Author: imath
  * Author URI: https://imathi.eu/
@@ -69,7 +69,7 @@ final class GDPR_Is_Not_A_Worse_User_Experience {
 	 */
 	private function globals() {
 		// Version
-		$this->version = '1.0.0';
+		$this->version = '1.1.0';
 
 		// Domain
 		$this->domain = 'gdpr-compliance-is-not-a-worse-user-experience';
@@ -95,8 +95,10 @@ final class GDPR_Is_Not_A_Worse_User_Experience {
 		 * This plugin is only needed untill the ticket #43857 is fixed
 		 *
 		 * @see https://core.trac.wordpress.org/ticket/43857
+		 * 
+		 * @since 1.1.0 WordPress core fixed the issue in changeset 44659 (5.1.0-beta2)
 		 */
-		if ( version_compare( $GLOBALS['wp_version'], '4.9.6', '<' ) ) {
+		if ( version_compare( $GLOBALS['wp_version'], '4.9.6', '<' ) || function_exists( 'wp_get_unapproved_comment_author_email' ) ) {
 			return;
 		}
 
